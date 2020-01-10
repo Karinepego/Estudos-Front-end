@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Tamanhos de textos </title>
+		<meta charset="utf-8">
+		<style type="text/css">
+		/*
+		px- tamanho fixo
+		% tamanho relativo
+		em tamanho relativo ao container pai*/
+		div {
+			font-size: 100px;
+		}
+
+		.texto {
+			/*se aquela linha que se encontra o parametro de medida EM automaticamente o bloco em que ele se encontra vira um container pai, (como se o filho especial com EM marcado na testa é harry potter da vida... o cara pai que o criou automaticamente vira REI.... desse modo a mandado do filho o rei faz com que todos da familia siga as regias do filho)*/
+			font-size:  1em;
+		}
+		/*imagine um jogo de cartas onde existem pixels, porcentagem e EM, onde carta EM diz: esta carta nao tem um valor fixo... mas um valor relativo... ao valor entregue pelo meu pai que vai determinar o valor daqueles  que na mesa, nao possuem uma carta nenhuma incluindo a mim! o valor relativo siginifica que ... se nesta carta estiver escrito 2em ela sera o dobro de 1 em ou seja ela sera o dobro do valor entregue pelo meu pai, se na carta estiver escrito 3em ... ela sera o triplo do valor do meu pai (IMPORTANTE em nao funciona com apenas numeros inteiros ele tbm funciona com numeros decimais terminados em 5 tipo 0,5, 2,5, 3,5, 1,5, etc)*/
+
+		</style>
+</head>
+<body>
+
+	<div> <!--em algum lugar no style (.texto a partir do 1em) foi definido que o DIV  é pai e lider,e que ele manda em tudo que esta dentro do bloco dele -->
+		<p class="texto">Conteúdo 1</p>
+		<p>Conteúdo 2</p>
+	</div>
+	<!--como voce pode perceber o unico em do grupo é o conteudo1... o conteudo2 foi forcado a entrar na regra pq o pai div o obrigou pois o conteudo2 nao possui um class pra chamar de seu... porque se tivesse ele iria se safar do pai dele e seguir seu propio class -->
+</body>
+	<!-- pode parecer complexo demais pra ser utilizado por vc mas como vc sempre diz... sao os detalhes que te destaca dentre os melhores... se por algum acaso o seu site por exemplo ficar com a escrita pequena em apenas 1 lugar vc vai conseguir mudar e melhorar ele-->

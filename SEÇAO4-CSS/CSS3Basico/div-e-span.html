@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>div e span</title>
+		<meta charset="utf-8">
+			<style type="text/css">
+				#topo {
+					background: darkslategray;
+				}
+			    #conteudo{
+			    	background: darkturquoise;
+			    	 }
+			    .produto {
+			    	background: gray;
+			    	margin: 10px;
+			    }
+			    #rodape{
+			    	background: darkslategray;
+			    }
+			    #assinatura{
+			    	background: pink;
+			    }
+			</style>
+	</head>
+
+	<body>
+
+		<div id="topo">
+			<img src="imagens/amazon.png" width="200">
+			<ul>
+				<li>home</li>
+				<li>produtos</li>
+				<li>contatos</li>
+			</ul>
+		</div>
+			<div id="conteudo"> <!--a a div da id=conteudo esta seradado do div da id=topo, cada div a seguir é a criaçaõ de um bloco, cada bloco com  um produto diferente, cada bloco com a cor gray, cada bloco dentro do bloco div=ide=conteudo que possui a cor darkturquoise... div funciona pra deixar tudo bem organizado-->
+			<!--div ocupa todo o espaçamento de conteúdo, por isso eu utilizei da tag margin de 10px-->
+			<div class="produto">
+				produto1
+			</div>
+			<!--se eu trocar todos esses div´s por span eu consigo colocar todos os produtos um na frente do outro e nao um embaixo do outro-->
+			<div class="produto">
+				produto2
+			</div>
+			<div class="produto">
+				produto3
+			</div>
+		</div>
+
+		<div>
+			<div id="rodape">
+				todos os direitos reservados &reg;
+			</div>
+		</div>
+		<span id="assinatura">
+			Karine
+		</span>
+	</body>
+</html>

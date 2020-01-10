@@ -1,0 +1,44 @@
+/*modelo de caixa
+.conteudo {
+	border:1px solid red;
+	/*
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;*/
+
+	/*padding: 20px 15px 10px 5px;
+	padding: 20px;
+
+	/*margin-top: 20px;
+	margin-right:20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin: 10px 30px;
+
+
+	width: 150px; /*define a laurgura fixa do border
+	independendo do que esta escrito nele seria legal
+	se a soma de padding nao desse um  numero maior que
+	o width da borda
+
+}
+.conteudo2 {
+	margin:50px; /*entre a margim de 50px do vermelho 
+	e de 10 px do verde, a do vermelho 50px é a escolhida,
+	 pois é um padrao do browser
+	width: 150px;
+	border:1px solid green;
+
+}*/
+
+#noticia {
+	background: pink;
+	width: 300spx;
+	padding: 20px
+
+}
+
+
+
+

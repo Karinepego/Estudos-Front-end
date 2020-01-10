@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamentos (static, rela)tive, absolute e fixed</title>
+	<meta charset="utf-8">
+		<style type="text/css">
+			.conteudo1 {
+				border: 1px solid red;
+				background: yellow;
+				height: 200px;
+				width: 200px;
+				position: absolute;
+				z-index: 3
+			
+			}
+
+			.conteudo2 {
+				border: 1px solid red;
+				background: pink;
+				height: 200px;
+				width: 200px;
+				position: absolute;
+				top: 80px;
+				left: 80px;
+				z-index: 1;
+			}
+
+			.conteudo3 {
+				border: 1px solid red;
+				background: violet;
+				height: 200px;
+				width: 200px;
+				position: absolute;
+				top: 160px;	
+				left: 160px;
+				z-index: 2;
+			}
+			
+				
+		</style>
+</head>
+<body>
+	<div class="conteudo1">
+		conteudo 1
+	</div>
+
+	<div class="conteudo2">
+		conteudo 2
+	</div>
+
+	<div class="conteudo3">
+		conteudo 3
+	</div>
+	
+</body>
+</html>
