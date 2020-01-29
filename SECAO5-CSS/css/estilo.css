@@ -1,0 +1,67 @@
+/******************************************* SELETORES ***********************************************************/
+/************************
+*seletores universais 
+
+* {
+	border: 2px solid green;
+}
+
+/************************
+Seletor de texto
+
+h1 {
+	color: red;
+} 
+
+/************************				/**** comente a maioria e teste oq vc quer ver
+seletor de classe
+
+p.vermelho {
+	color: red; 
+} 
+
+/************************
+seletor de ID 
+
+#cabecalho {
+	border: 3px dotted blue;
+} 
+
+/***********************
+seletor de filho
+li>a {
+	text-decoration: none;
+	color: pink;
+}
+
+/***********************
+seletor descendente
+
+p a {
+	color: yellow;
+}
+
+/***********************
+seletor de irmão adjacente
+
+h1+p {
+	color: gray;
+}
+
+/***********************
+seletor de irmao geral
+
+h1~p {
+	color: pink;
+}
+*/
+
+
+/*********************************************** HERANCA SUJACENTE **************************************************/
+
+body {
+	color: purple;
+	background: pink;
+	border:1px solid blue;
+}
+
