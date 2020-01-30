@@ -57,11 +57,77 @@ h1~p {
 */
 
 
-/*********************************************** HERANCA SUJACENTE **************************************************/
+/*********************************************** HERANCA SUBJACENTE **************************************************/
+ /*#pagina p {
+ 	color: blue !important ;
+ }
 
-body {
-	color: purple;
-	background: pink;
-	border:1px solid blue;
+#pagina p {
+ 	color: pink;
+ }*/
+
+ /*se uma regra for mais especifica que o outro a regra mais especifica sera aplicada 
+ (tera precedencia sobre as regras gerais */
+/*
+ * {
+ 	color: pink;
+ }
+
+ h2 { /*terceiro /
+ 	color: red;
+ } 
+
+h2#amarelo {/*segundo /
+ 	color: yellow;
+ }
+
+ h2.verde { /*primeiro /
+ 	color: green;
+ } /*
+
+
+ /************************************ BARRA DE NAVEGAÇÃO VERTICAL/LATERAL *******************************************/
+ /*
+ ul {
+ 	list-style-type: none;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+ li {
+ 	padding: 5px 20px;
+ 	background: url(../imagens/seta.png) no-repeat left center;
+ }
+ */
+
+ul {
+ 	margin: 0px;
+ 	padding: 0px;
+ 	list-style-type: none;
 }
+
+ul a {
+ 	/*border: 1px solid red;*/
+ 	width: 200px;
+ 	height: 40px;
+ 	color: black;
+ 	text-decoration: none;
+ 	text-indent: 40px;
+ 	line-height: 40px;
+ 	display: block; /* eu coloquei esse displau do tipo block pq 
+ 	por padrao links sao do tipo inline e o width e height nao consegue
+ 	ser formatado do modo display do tipo block.... porque elementos do 
+ 	tipo inline dependem do tamanho do conteudo*/
+ 	background: url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+	background-position: right bottom;
+	color: #fff;
+} 
+
+
+
+
+
 
