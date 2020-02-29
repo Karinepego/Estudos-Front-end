@@ -182,42 +182,212 @@ ul .primeiro a{
  /************************ NAVEGAÇÃO COM ABAS /CONTINUAÇÃO estilo2.css ****************************************/
 
 /******************** BARRA DE NAVEGAÇÃO COM ABAS ******************************************/
-
+/*
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
+}*/
  
- ul {
+/* ul {
  	margin: 0;
  	padding: 0;
  	list-style: none;
  	width: 720px;
- }
-
+ }*/
+/*
  ul li {
  	float: left;
  	
  	background: url(../imagens/aba-direita.png) no-repeat top right;
- }
+ }*/
 
- li a{
+/* li a{
  	display: block;
- 	/*deixa em estilo bloco indepentente do conteudo*/
+ 	/deixa em estilo bloco indepentente do conteudo/
  	padding: 0 2em;
  	line-height: 3em;
  	text-decoration: none;
  	background: url(../imagens/aba-esquerda.png) no-repeat top left;
  	color: #fff;
- }
-
+ }*/
+/*
  li a:hover {
  	color: #894a1f; 
- }
+ }*/
 
-ul #atual  {
+/*ul #atual  {
 	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
-}
+}*/
 
-ul #atual a {
+/*ul #atual a {
 	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
 }
+*/ 
+
+/******************************** LAYOUT DE LARGURA FIXA *****************************************/
+
+/*body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container  {
+	width: 720px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+#marca {
+	height: 100px;
+	background: #9e9e9e;
+	text-align: center;
+	line-height: 100px;
+}
+
+#conteudo {
+	width: 520px;
+	float: right;
+}
+
+#conteudo-principal {
+	width: 320px;
+	float: left;
+	
+}
+
+#conteudo-secundario {
+	width: 180px;
+	float: right;
+	background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao {
+	width: 180px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#navegacao ul  {
+	list-style: none;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}*/
+
+
+/*****************************   LAYOUT LIQUIDO   ****************************/
+/*layout liquido é definido por porcentagem e n por pixel
+ vc transforma pixel em porcentagem a partir de uma regra de 3 
+ baseando-se no valor do seu container */
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container  {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	min-width: 720px;
+	/*max-width: 960px; */
+}
+
+#marca {
+/*	width: 100%; //nao necessario pois uma div ja ocupa 100% do espaco dela
+*/	height: 100px;
+	background: #9e9e9e;
+	text-align: center;
+	line-height: 100px;
+}
+
+#conteudo {
+	width: 74%;/*520px-> 74.28% -> arredondei*/
+	float: right;
+}
+#navegacao {
+	width: 24% ;/*180px -> 25.71% -> arredondei*/
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#conteudo-principal {
+	width: 64%;/*320px ->  regra de 3 -> 64% */
+	float: left;
+	border: 1px solid green;
+	
+}
+
+#conteudo-secundario {
+	width: 34%; /*180px -> regra de 3 -> 36%*/
+	float: right;
+	background: #d1d1d1;
+	border: 1px solid green;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+#navegacao ul  {
+	list-style: none;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
