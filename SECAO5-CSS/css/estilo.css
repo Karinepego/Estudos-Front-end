@@ -57,7 +57,7 @@ h1~p {
 */
 
 
-/*********************************************** HERANCA SUBJACENTE **************************************************/
+/********************************************************* HERANCA SUBJACENTE ****************************************************/
  /*#pagina p {
  	color: blue !important ;
  }
@@ -86,7 +86,7 @@ h2#amarelo {/*segundo /
  } /*
 
 
- /************************************ BARRA DE NAVEGAÇÃO VERTICAL/LATERAL *******************************************/
+ /************************************ BARRA DE NAVEGAÇÃO VERTICAL/LATERAL *******************************************************/
  
  /*ul {
  	list-style-type: none;
@@ -181,7 +181,7 @@ ul .primeiro a{
 }*/
  /************************ NAVEGAÇÃO COM ABAS /CONTINUAÇÃO estilo2.css ****************************************/
 
-/******************** BARRA DE NAVEGAÇÃO COM ABAS ******************************************/
+/******************** BARRA DE NAVEGAÇÃO COM ABAS ********************************************************************************/
 /*
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -223,7 +223,7 @@ body {
 }
 */ 
 
-/******************************** LAYOUT DE LARGURA FIXA *****************************************/
+/****************************************************** LAYOUT DE LARGURA FIXA ***************************************************/
 
 /*body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -291,10 +291,10 @@ body {
 }*/
 
 
-/*****************************   LAYOUT LIQUIDO   ****************************/
+/***************************************************   LAYOUT LIQUIDO   **********************************************************/
 /*layout liquido é definido por porcentagem e n por pixel
  vc transforma pixel em porcentagem a partir de uma regra de 3 
- baseando-se no valor do seu container */
+ baseando-se no valor do seu container 
 
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -306,23 +306,23 @@ body {
 	margin: 0 auto;
 	background: #fff;
 	min-width: 720px;
-	/*max-width: 960px; */
+	/*max-width: 960px; //
 }
 
 #marca {
-/*	width: 100%; //nao necessario pois uma div ja ocupa 100% do espaco dela
-*/	height: 100px;
+/*	width: 100%; //nao necessario pois uma div ja ocupa 100% do espaco dela //
+	height: 100px;
 	background: #9e9e9e;
 	text-align: center;
 	line-height: 100px;
 }
 
 #conteudo {
-	width: 74%;/*520px-> 74.28% -> arredondei*/
+	width: 74%;/*520px-> 74.28% -> arredondei //
 	float: right;
 }
 #navegacao {
-	width: 24% ;/*180px -> 25.71% -> arredondei*/
+	width: 24% ;/*180px -> 25.71% -> arredondei //
 	float: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -330,14 +330,14 @@ body {
 }
 
 #conteudo-principal {
-	width: 64%;/*320px ->  regra de 3 -> 64% */
+	width: 64%;/*320px ->  regra de 3 -> 64% //
 	float: left;
 	border: 1px solid green;
 	
 }
 
 #conteudo-secundario {
-	width: 34%; /*180px -> regra de 3 -> 36%*/
+	width: 34%; /*180px -> regra de 3 -> 36% //
 	float: right;
 	background: #d1d1d1;
 	border: 1px solid green;
@@ -367,6 +367,205 @@ body {
 	padding: 5px;
 }
 
+
+/************************************************  IMAGENS LIQUIDAS  *************************************************************/
+/*
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container  {
+	width: 85%;
+	margin: 0 auto;
+	background: #fff;
+	min-width: 720px;
+	max-width: 1280px;
+}
+
+#marca {
+	width: 100%;
+	height: 200px;
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+//////#imagem {
+	width: 90%;
+	overflow: hidden;
+	border: 1px solid red;
+}////
+
+#conteudo {
+	width: 74%;/*520px-> 74.28% -> arredondei //
+	float: right;
+}
+#navegacao {
+	width: 24% ;/*180px -> 25.71% -> arredondei //
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#conteudo-principal {
+	width: 64%;/*320px ->  regra de 3 -> 64% //
+	float: left;
+}
+
+img.img-noticia {
+	width: 96%;
+	padding: 2%;
+}
+
+#conteudo-secundario {
+	width: 34%; /*180px -> regra de 3 -> 36% //
+	float: right;
+	background: #d1d1d1;
+	
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao ul  {
+	list-style: none;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}
+
+/****************************************************** COLUNA FALSA **************************************************************
+/* colunas falsas so funcionam em layouts fixos nao funcionam em layouts liquidos*/
+
+/*body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container  {
+	width: 960px;
+	margin: 0 auto;
+	background: #fff url(../imagens/coluna.png) repeat-y left top;
+	min-width: 720px;
+	max-width: 1280px;
+
+}
+
+#marca {
+	width: 100%;
+	height: 200px;
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+//////#imagem {
+	width: 90%;
+	overflow: hidden;
+	border: 1px solid red;
+}////
+
+#conteudo {
+	width: 74%;/*520px-> 74.28% -> arredondei //
+	float: right;
+}
+#navegacao {
+	width: 24% ;/*180px -> 25.71% -> arredondei //
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*background: #d1d1d1;
+}
+
+#conteudo-principal {
+	width: 64%;/*320px ->  regra de 3 -> 64% //
+	float: left;
+}
+
+img.img-noticia {
+	width: 96%;
+	padding: 2%;
+}
+
+#conteudo-secundario {
+	width: 180px; /*180px -> regra de 3 -> 36% //
+	float: right;
+	background: #d1d1d1;
+	
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao ul  {
+	list-style: none;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}*/
+
+/********************************************  ESTILIZANDO TABELAS **************************************************/
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+	width: 600px;
+	border-collapse: separate;
+
+}
+
+th, td {
+	
+	padding: 7px;
+
+}
+ th {
+ 	text-transform: uppercase;
+ 	border-top: 1px solid #999;
+ 	border-bottom: 1px solid #111;
+ 	text-align: left;
+ 	font-size: 90%;
+ 	letter-spacing: 0.1em;
+ }
+
+ tr:hover {
+ 	background-color: #c3e6e5;
+ }
+
+tr.alternado {
+	background-color: #efefef;
+}
+
+.numero {
+	text-align: right;
+}
 
 
 
