@@ -531,7 +531,7 @@ img.img-noticia {
 }*/
 
 /********************************************  ESTILIZANDO TABELAS **************************************************/
-body {
+/*body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -565,15 +565,115 @@ tr.alternado {
 
 .numero {
 	text-align: right;
+}*/
+
+/************************************************* ESTILIZANDO FORMULARIOS *****************************************************/
+
+/*body {
+	font-family: "Trebuchet ms", Helvetica, sans-serif;
 }
 
+ fieldset {
+ 	margin: 1em 0;
+ 	padding: 1em;
+ 	border: 1px solid #ccc;
+ 	background: #f8f8f8;
+ }
+
+legend {
+ 	font-weight: bold;	
+ }
+
+label {
+	cursor: pointer;
+	display: block;
+}
+
+input /*[type="text"] // o problema dessde seletor de att e que ele nao e aceito em todo navegador// {
+	width: 300px;
+}
+
+textarea {
+	width: 300px;
+	height: 100px;
+}
+
+/*input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+//
+.radio {
+	margin-right: 1em;
+	width: auto;
+}/*
+
+/***************************************** ESTILIZANDO TABELAS DOIS ***********************************************/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+}
+
+#container {
+	width: 400px;
+	height: 300px;
+	background-color: rgba(225,255,255,0.3); /*0.3 representa o nivel de quao transparente é a div*/
+	border-radius:10px;
+		-webkit-border-radius:10px; /*desnecessario*/
+		-moz-border-radius:10px; /*desnecessario mas faz bem...deixe-o*/
+	
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+#container img {
+	width: 120px;
+	height: 120px;
+	margin-top: -60px; 
+	margin-bottom: 30px;
+	/*ao aplicar um margin top 
+	com a metade da altura (120) em negativo da imagem vc tera
+	uma imagem centralizada acima do container*/
+	
+}
+
+input {
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
 
 
+}
 
+input.email {
+	background-image: url(../imagens/icone-usuario.png);
+}
 
+input.senha {
+	background-image: url(../imagens/icone-cadeado.png);
+}
+ input.submit {
+ 	color: #fff
+ 	background-color:#f79300;
+ 	border: 2px solid #db7d00;
+ 	padding: 5px 20px;
+ 	height: 45px;
+ 	width: 90%;
 
+ 	background: linear-gradient(to bottom, #faa600, #f68a00);
+ 	background: -webkit-linear-gradient(to bottom, #faa600, #f68a00); /*Desnecessario*/
+ 	background: -moz-linear-gradient(to bottom, #faa600, #f68a00); /*Desnecessario mas é bom usar */
+ 	background: -o-linear-gradient(to bottom, #faa600, #f68a00); /*Desnecessario*/
+/*nao sei se tem importancia eu colocar o primeiro em primeiro lugar o prof colocou em ultimo mas eu quis colocar primeiro */
 
-
+ }
 
 
 
