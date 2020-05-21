@@ -1,5 +1,70 @@
-/**** SOMBRAS ****/
+/*** ANIMAÇÕES ****/
+
+@keyframes animacao-caixa {
+	from {
+		background: purple; 
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+	to {
+		background: pink; 
+		border-radius: 300px;
+		top: 100px; 
+		left: 100px;
+		/*top e left permite com q a animação caminhe 
+		pelo container body mas para isso: position: relative;*/
+	}
+}
+
 #caixa {
+	width: 300px;
+	height: 300px;
+	background: pink; 
+	position: relative;
+
+	/*animation-name: animacao-caixa;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-iteration-count: 5;
+	animation-direction: alternate;*/
+
+	animation: animacao-caixa 5s 1s 5 alternate;
+
+}
+
+
+
+/*@-webkit-keyframes animacao-caixa {
+	from {
+		background: purple; 
+	}
+	to {
+		background: pink; 
+	}
+}
+
+@-moz-keyframes animacao-caixa {
+	from {
+		background: purple; 
+	}
+	to {
+		background: pink; 
+	}
+}
+
+@-o-keyframes animacao-caixa {
+	from {
+		background: purple; 
+	}
+	to {
+		background: pink; 
+	}
+}*/
+
+
+/**** SOMBRAS ****/
+/*#caixa {
 	width: 300px;
 	height: 300px;
 	padding: 8px;
@@ -10,11 +75,10 @@
 
 #caixa h1 {
 	color: white;
-	/*text-shadow: 20px 20px gray;*/
+	/*text-shadow: 20px 20px gray;//
 	text-shadow: 20px 20px 10px rgba(0,0,0,0.5);
 
-}
-
+}*/
 
 
 /**** DEGRADES *****/
@@ -29,6 +93,7 @@
 #caixa h1{
 	background: rgba(255,255,255, 0.5);
 }*/
+
 
 /**** NORMALIZE ****/
 /*#caixa {
