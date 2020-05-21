@@ -1,0 +1,60 @@
+/**** SOMBRAS ****/
+#caixa {
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: 20px 200px 30px 20px grey;
+}
+
+#caixa h1 {
+	color: white;
+	/*text-shadow: 20px 20px gray;*/
+	text-shadow: 20px 20px 10px rgba(0,0,0,0.5);
+
+}
+
+
+
+/**** DEGRADES *****/
+/*#caixa{
+	width: 300px;
+	height: 300px;
+	/*background: url("../imagens/camera.png");//
+	background: linear-gradient(20deg, pink, purple, blue);
+	/*background: radial-gradient( pink, purple, blue,);//
+}
+
+#caixa h1{
+	background: rgba(255,255,255, 0.5);
+}*/
+
+/**** NORMALIZE ****/
+/*#caixa {
+	width: 300px;
+	height: 300px;
+	background-color: #b9c941;
+	padding:15px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+	/*-webkit-border-radius: 00px 220px;
+	-moz-border-radius: 00px 220px;
+	border-radius: 00px 220px;//
+
+#caixa2 {
+	width: 400px;
+	height: 300px;
+	background-color: pink;
+	
+	}
+
+//.perfilredondo {
+	border-radius: 200px;
+	/*border-radius: 10PX 50PX 80px 100px;
+}*/
+
+
