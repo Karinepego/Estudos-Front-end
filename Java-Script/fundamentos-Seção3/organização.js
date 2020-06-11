@@ -1,7 +1,7 @@
 console.log("Sentença de código")
 {
     {
-        console.log("olá ")
-        console.log("Mundo!") //comentario 
+        console.log(" Olá Mundo! ")
+        console.log(" Eu me chamo Karine!") //comentario 
     }
 }
