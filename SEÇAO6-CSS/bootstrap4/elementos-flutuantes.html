@@ -8,51 +8,75 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Bootstrap- Alinhamento de textos</title>
+    <title>Bootstrap- Elementos flutuantes</title>
   </head>
   <body style="margin-bottom: 200px;padding: 16px;">
     
-    <!-- Parágrafo justificado -->
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    <br>
+    <br>
+
+    <!-- Elementos flutuantes  tbm tem o float-none!-->
+    <div style="border:1px solid red;" class="clearfix">
+        <div class="bg-success float-left">Float Left</div>
+        <div class="bg-warning float-right">Float Right</div>
+    </div>
+
+    <!-- Posicionamento fixo - top e bottom -->
+    <h1 class="fixed-bottom bg-warning">Título do conteúdo fixo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+    <!-- 
+        Float responsivo - float-<tela>-<direcao>
+            tela: sm, md, lg, xl
+            alinhamento: left, right
+     -->
+    <div class="float-sm-right">tela &gt;= 576px * </div><!--Small-->
+    <div class="float-md-right">tela &gt;= 768px * </div><!--Medium-->
+    <div class="float-lg-right">tela &gt;= 992px * </div><!--Large-->
+    <div class="float-xl-right">tela &gt;= 1200px * </div><!--Extra Large-->
+
+    <br>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+    <!-- Colar no topo (sticky) -->
+    <ul class="list-inline bg-success sticky-top">
+      <li class="list-inline-item">Item 1</li>
+      <li class="list-inline-item">Item 2</li>
+      <li class="list-inline-item">Item 3</li>
+    </ul>
+
+    <h1>Título do conteúdo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
 
     <br>
     <br>
-
-    <!-- 
-        Alinhamento responsivo - text-<tela>-<alinhamento>
-            tela: sm, md, lg, xl
-            alinhamento: left, center, right
-     -->
-    <p class="text-sm-right">tela &gt;= 576px celular</p><!--Small-->
-    <p class="text-md-right">tela &gt;= 768px tablets</p><!--Medium-->
-    <p class="text-lg-right">tela &gt;= 992px notebooks</p><!--Large-->
-    <p class="text-xl-right">tela &gt;= 1200px monitores</p><!--Extra Large-->
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    enchimento proposital :D
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 
-    <!-- Elemento Block para inline -->
-    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
-    <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-    <br>
-    <br>
-
-    <!-- Elemento Inline para Block -->
-    <span class="bg-success d-block">Lorem ipsum dolor</span>
-    <span class="bg-success d-block">Lorem ipsum dolor 2</span>
-
-    <br>
-    <br>
-
-    <!-- Elemento Inline-Block -->
-    <div class="bg-warning">
-      <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
-      <h3 class="bg-success d-inline-block">Lorem ipsum dolor</h3>
-    </div>
-
-
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
