@@ -13,6 +13,8 @@
 
   </head>
 
+
+
   <body>
 
     <!-- Navegação
@@ -24,7 +26,7 @@
         justify-content-end
         flex-column-->
     <h2>Navegação simples / abas</h2>
-    <ul class="nav nav-pills justify-content-center ">
+    <ul class="nav nav-pills justify-content-center nav">
         <li class="nav-item">
             <a href="" class="nav-link ">Home</a>
         </li>
@@ -39,6 +41,10 @@
         </li>
     </ul>
     
+
+
+
+
 
     <h2>Barra de navegação simples</h2>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
@@ -61,6 +67,11 @@
         </ul>
     </nav>
     
+
+
+
+
+
 
     <h2>Barra de navegação com menu responsivo</h2>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -96,19 +107,129 @@
     </nav>
 
 
-    <h2>Barra de navegação com formulário</h2>
-    
+
+
+
+
+    <h2>Barra de navegação com formulário/pesquisa</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <!-- Logo -->
+            <a href="" class="navbar-brand">Chalé Hotel</a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#karine2">
+                <!--Navbartoggle=define o botao
+                 e datatoggle= vai colapsar o botão com os links navegação q tbm tem collapse -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegação -->
+            <div class="collapse navbar-collapse" id="karine2"> <!-- inicio de navegaçao-->
+                <!--collapse=dizquando o botão foi clicado e 
+                navbarcollapse=organiza os links esteticamente e entrega a collapse os links q vao aparescer  -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contatos</a>
+                    </li>
+                </ul>
+                <!-- Formulario -->
+                <form class="form-inline" class="nav-item">
+                    <input type="text" class="form-control" placeholder="pesquisar...">
+                    <button class="btn btn-outline-success">Ok</button>
+                </form>
+            </div> <!--Fechamento de navegação -->
+    </nav>
 
     
+
+
+
+
     <h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <!-- Logo -->
+            <a href="" class="navbar-brand">Chalé Hotel</a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#karine3">
+                <!--Navbartoggle=define o botao
+                 e datatoggle= vai colapsar o botão com os links navegação q tbm tem collapse -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navegação -->
+            <div class="collapse navbar-collapse" id="karine3"> <!-- inicio de navegaçao-->
+                <!--collapse=dizquando o botão foi clicado e 
+                navbarcollapse=organiza os links esteticamente e entrega a collapse os links q vao aparescer  -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="" >Serviços</a>
+                        <div class="dropdown-menu">
+                            <a href=""class="dropdown-item" >serviços 1</a>
+                            <a class="dropdown-item" href="">serviços 2</a>
+                            <a class="dropdown-item" href="">serviços 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contatos</a>
+                    </li>
+                </ul>
+            </div> <!--Fechamento de navegação -->
+    </nav>
     
+
+
+
+
+
     
     <!--Cores
     opções: bg-primary, bg-secondary, bg-success, bg-info,
     bg-warning, bg-danger, bg-light, bg-dark
     -->
     <h2>Cores</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger ">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+        <!-- Navegação -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
     
+
+
+
+
+
 
     <!--Alinhamentos
     opções: fixed-top, fixed-bottom, sticky

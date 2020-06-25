@@ -10,10 +10,11 @@ console.log(prod1) // resultado { nome: 'Celular voador', preco: 1500.99, 'Desco
 
 const prod2 = { // prefiro dessa maneira 
     nome: 'Notebook assassino',
-    preco: 1500.00,
+    preco: 1500.99,
     //aqui dentro mesmo eu poderia abrir varias e varias cadeiras de objects novos a criar uma estrutura aninhada 
     desconto: 0.10
 }
 console.log(prod2)
 
+//JSON - nao sei o q é no momento n me importa 
 
