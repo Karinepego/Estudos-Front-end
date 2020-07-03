@@ -1,4 +1,4 @@
-for (var i = 0; i < 5; i++) {
-    console.log(i)
+for (var contador = 0; contador < 5; contador++) {
+    console.log(contador)
 }
-console.log ('i =', i)
+console.log ('i =', contador)
