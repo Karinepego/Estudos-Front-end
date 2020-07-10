@@ -10,21 +10,32 @@ console.log(typeof Produto)
 console.log(typeof new Produto())
 
 
+//em minhas palavras: classe carro é a Mãe do filho gol e filho logan...
+//foi ela quem disse pra eles q eles são um carro assim como ela, e nao um avião
+// e disse a eles q eles  precisam daqueles 
+//metodos e atributos pra ser um carro de verdade quando crescer! :D
 
 
-/*Uma atribuição de uma função é um object cujos
- atributos e comportamentos são definidos por 
- essa funçtion. Fazendo um paralelo com a vida real 
- uma function/fôrma de 
- bolo e cada bolo que é feito com ela seria uma 
- instância dessa function/fôrma, entendeu?
+//O closure   ??????????
+//(ou função como valor) é um comportamento 
+//com um estado anexado a ele
 
-Trazendo novamente para a programação, se
- eu tenho uma class (que em javascript é uma função)
-  chamada Carro. Essa classe tem como atributos, 
-  modelo, ano, velocidade máxima. E à partir dessa
-   função eu crio um carro cujo modelo é gol,
-    ano 2019, velocidade máxima 160 km/h, e também 
-    crio um carro cujo modelo é logan, ano é 2018, 
-    velocidade máxima 150 km/h. O gol é uma instância
-     de carro e o Logan é outra instância de carro.*/
+let pessoa = { //abriu chaves abriu um objeto
+     nome: "karine",
+     cpf: "10000",
+     olhos: "castanho",
+
+     andar: function() { //isso é os metodos 
+          return console.log('andou')
+     }
+
+     falar: function() { //isso é os metodos 
+          return console.log('falou')
+     }
+}
+
+
+
+
+
+
