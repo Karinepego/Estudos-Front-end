@@ -2,12 +2,12 @@ console.log(typeof Object)
 console.log(typeof new Object())
 
 const Cliente = function() {}
-console.log(typeof Cliente)
-console.log(typeof new Cliente)
+console.log(typeof Cliente)//class de cliente
+console.log(typeof new Cliente)//objeto criado a partir da class cliente
 
 class Produto {}
-console.log(typeof Produto)
-console.log(typeof new Produto())
+console.log(typeof Produto)// classe produto
+console.log(typeof new Produto()) //objeto de produto
 
 
 //em minhas palavras: classe carro é a Mãe do filho gol e filho logan...
@@ -20,6 +20,7 @@ console.log(typeof new Produto())
 //(ou função como valor) é um comportamento 
 //com um estado anexado a ele
 
+/* 
 let pessoa = { //abriu chaves abriu um objeto
      nome: "karine",
      cpf: "10000",
@@ -27,13 +28,14 @@ let pessoa = { //abriu chaves abriu um objeto
 
      andar: function() { //isso é os metodos 
           return console.log('andou')
-     }
+     },
 
      falar: function() { //isso é os metodos 
           return console.log('falou')
      }
 }
 
+*/
 
 
 
