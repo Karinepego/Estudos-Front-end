@@ -11,13 +11,25 @@ var Pessoa = function(nome) { //classe/function
   console.log('pessoa2 - o bolo de chocolate- ' + pessoa2.nome); // 
 
 
+  console.log(typeof this) //notação ponto 
+  console.log(typeof console)
 
 
-  /*
-  var Cliente = function(nome) {
-    this.nome = nome;
-    console.log("forma de bolo ")
+
+//----------------------------------------------------------------------//
+function Book (type, author) {
+  this.type = type;
+  this.author = author;
+  this.getDetails = function () {
+      return this.type + " written by " + this.author;
+  }
 }
+var book = new Book("Fiction", "Peter King");
+alert(book.getDetails());        // => Fiction written by Peter King
 
-var cliente1 = new cliente("karine");
-var cliente2 = new cliente("bob"); */
+//----------------------------------------------------------------------//
+
+
+
+
+
