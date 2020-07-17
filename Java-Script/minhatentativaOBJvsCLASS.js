@@ -25,7 +25,18 @@ function Book (type, author) {
   }
 }
 var book = new Book("Fiction", "Peter King");
-alert(book.getDetails());        // => Fiction written by Peter King
+console.log(book.getDetails());        // => Fiction written by Peter King
+
+//----------------------------------------------------------------------//
+
+let obj = {
+  cat: 'meow',
+  dog: 'woof'
+};
+let sound = obj.dog;
+// or to call the cat let sound = obj.cat;
+console.log(sound);
+// meow
 
 //----------------------------------------------------------------------//
 
