@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+		//https://www.w3schools.com/jsref/jsref_obj_date.asp
+
+		var data = new Date()
+
+		document.write(data.getDate() + '/' + (data.getMonth() + 1 ) + '/' + data.getFullYear() + "<br/>")// vai pegar a data de hj (é dinamica de acordo com o ))
+		
+		// adicionar / remover dias
+		document.write(data.toString())
+		data.setDate(data.getDate() - 720 )// dias
+		document.write('<hr/>')
+		document.write(data.toString())
+		document.write('<br/> <br/> <hr/>')
+
+		// adcionar / remover meses
+		document.write(data.toString())
+		data.setMonth(data.getMonth() - 1 )//  1mes
+		document.write('<hr/>')
+		document.write(data.toString())
+		document.write('<br/> <br/> <hr/>')
+
+		// adcionar / remover anos
+		document.write(data.toString())
+		data.setFullYear(data.getFullYear() - 1 )// 1 ano
+		document.write('<hr/>')
+		document.write(data.toString())
+		document.write('<br/> <br/> <hr/>')
+
+		// quantos dias tem entre as 2 datas?:
+		var date1 = new Date(2017,0,15)
+		var date2 = new Date(2017,1,23)
+
+		document.write(date1.toString())
+		document.write('<hr/>')
+		document.write(date2.toString())
+		
+		document.write('<br/> <br/> <hr/>')
+		//converter as datas para açgo qie possamos calcular
+		document.write(date1.getTime())
+		document.write('<hr />')
+		document.write(date2.getTime())
+
+		//1 de janeiro de 1970 ate a data em questao é um parametro essa data 
+		var milissegundos_entre_datas = Math.abs(date1.getTime() - date2.getTime())
+		document.write(milissegundos_entre_datas) // math.abs retorna valor absoluto
+		document.write('<hr />')
+
+		// 1 di tem cada hora te, 60 minutos cada min tem 1000 milissegundos
+		//entao quantos milissegundos exstem em um dia
+		var milissegundos_entre_dia = (1*24*60*60*1000)
+		document.write('1 dia tem: ' + milissegundos_entre_datas + ' milissegundos')
+			document.write('<br/> <br/> <hr/>')
+			document.write('A difereça entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_entre_dia) + ' dias')
+
+
+
+	</script>
+</head>
+<body>
+</body>
+</html>

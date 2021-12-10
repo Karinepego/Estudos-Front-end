@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+		function acao1(){
+			alert('evento disparado')
+		}
+		/*
+		onkeydown <input onkeydown="acao1()" type="text"
+		onkeyup <input onkeyup="acao1()" type="text"/>
+		onkeypress - so funcionaria para pressopnar caracateres espciais a diferenca entr este o keydown é bem sutil 
+
+		https://www.w3schools.com/jsref/dom_obj_event.asp
+		*/
+	</script>
+</head>
+<body>
+	<input onkeypress="acao1()" type="text"/>
+</body>
+</html>

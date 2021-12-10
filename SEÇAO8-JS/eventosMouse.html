@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+		function acao1(){
+			alert(' elemento foi clicado')
+		}
+		function acao2(){
+			alert('o cursor abandonou o local do elemento')
+		}
+
+		/*
+		onclick <div onclick ="alert('teste')" 1 clik
+		ondblclic  <div onbldclick ="acao()" 2 cliques sequenciais
+		onmouseup <div onbldclick ="acao()" 1 clic q manter precionado
+		onmouseover <div onmouseover ="acao()"  //passar o mouse em cima ele dispara automaticamente sem a necessidade de clicar
+		onmouseout <div onbldclick ="acao()" se vc sair com o mouse do lugar onde esse evento esta ele tbm dispara automaticamente
+
+		https://www.w3schools.com/jsref/dom_obj_event.asp
+		*/
+
+		/*
+		onkeydown
+		onkeyup
+		onkeypress
+		*/
+	</script>
+</head>
+<body>
+	<div onclick ="acao1()" onmouseup ="acao2()" style="background: #ccc; height: 150px; width: 150px">
+		
+
+
+	</div>
+</body>
+</html>
