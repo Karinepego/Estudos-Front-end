@@ -14,12 +14,20 @@
 		onblur elemento perde o foco
 		
 		onchange estado modificado
+
+		// tem como usar 2 ao mesmo tempo
 		*/
 
 		
 	</script>
 </head>
 <body> 
-	<input onfucus="console.log('teste')" type="text" name="">
+	<input onblur = "console.log('perdeu o foco')" type="text" name=""> 
+	<select onchange = "console.log('recebeu alteração')">
+		<option> -- Selecione --</option>
+		<option value = "1">primeira opção/option>
+		<option value = "2">segunda opcai</option>
+	</select>
+
 </body>
 </html>
