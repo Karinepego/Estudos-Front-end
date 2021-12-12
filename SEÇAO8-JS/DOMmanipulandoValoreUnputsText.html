@@ -5,30 +5,53 @@
 	<title>JavaScript</title>
 	<script>
 		function distribuiCaracter(){
+
 			//selecionar o valor digitadi
-			document.getElementById('entrada').value
+			var caracter = document.getElementById('entrada').value
 
 			//limpar o campo de digitação
-			var caractere = document.getElementById('entrada').value = ''
+			 document.getElementById('entrada').value = ''
+
+			//limpar espaços em branco
+			caracter.trim()
+
 			switch(caracter){
-				// AQUIIIIIIIIIIIIII
+				case '0':
+				case '1':
+				case '2':
+				case '3':
+				case '4':
+				case '5':
+				case '6':
+				case '7':
+				case '8':
+				case '9':
+				//adicionar o cracater no campo referencia de numeros
+				document.getElementById('apenasNumeros').value =  caracter
+				break;
+				default:
+				//adicionar o carcter no campo referente a letras 
+				document.getElementById('apenasLetras').value = caracter
+
 			}
 		}
 
 	</script>
 </head>
 <body> 
-	<input type="text" 
+	<input 
+	type="text" 
 	placeholder="Digite um caractere aqui" 
 	onkeyup="distribuiCaracter()"
-	id="entrada" /> 
+	id="entrada" 
+	/> 
 
 	<hr />
 	<span>Letras:</span>
-	<input type="text" disabled="disabled">
+	<input type="text" disabled="disabled" id='apenasLetras'>
 
 	<span>Numeros:</span>
-	<input type="text" disabled="disabled">
+	<input type="text" disabled="disabled" id='apenasNumeros'>
 
 </body>
 </html>
