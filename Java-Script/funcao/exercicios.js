@@ -150,7 +150,7 @@ arredondamento pois esta nota resulta na reprovação do aluno. Por exemplo, a n
 85, mas a nota 29 não será arredondada por ser abaixo de 40 e não ser possível arredondamento eficiente, ou
 seja, que evite a reprovação do aluno. No caso de a nota ser 38, o arredondamento é possível pois atingirá 40
 e o aluno será aprovado.
- */ 
+ 
 
 function classificaoAluno(notaPrincipal){
     let notaArredondada
@@ -170,5 +170,93 @@ function calculaNota(notaPrincipal){
     }
 }
 
-classificaAluno(100)
-classificaAluno(38)
+classificaoAluno(100)
+classificaoAluno(38)
+*/
+
+/*12) Faça um algoritmo que calcule o fatorial de um número. 
+
+function fatorial(num){
+        if(num == 0){
+            return 1
+        } else {
+            return num * fatorial(num - 1)
+        }
+}
+console.log(fatorial(4));
+*/
+
+/*13) Crie um programa que exibe se um dia é dia útil, fim de semana ou dia inválido dado o número referente ao
+dia. Considere que domingo é o dia 1 e sábado é o dia 7. Utilize a estrutura Switch.
+ 
+ function DiasSemana(semana){
+     switch(semana){
+     case 2:
+     case 3: 
+     case 4:
+     case 5:
+     case 6:
+        return "É um dia útil da semana"
+            break;
+     case 7:
+     case 1:
+        return "Não é um dia util da semana"
+            break;
+     Case 
+     }
+ }
+
+//console.log(DiasSemana("Segunda"));
+//console.log(DiasSemana("Domingo"));
+console.log(DiasSemana(1));
+console.log(DiasSemana(3));
+console.log(DiasSemana(7));
+*/
+
+/*11) As regras para o cálculo dos anos bissextos são as seguintes:
+De 4 em 4 anos é ano bissexto;
+De 100 em 100 anos não é ano bissexto;
+De 400 em 400 anos é ano bissexto;
+Prevalecem as últimas regras sobre as primeiras.
+Partindo daí elabore uma função que recebe um ano e calcula se ele é ano bissexto, imprimindo no console a
+mensagem e retornando true ou false. 
+
+function classificacaoAno(ano){
+    if (ano <= 0){
+        return false
+    } else if (ano % 400 == 0) {
+        return true // é bissexto se exata
+    } else if (ano % 100 == 0) {
+        return false // nao bissexto se exata
+    } else if (ano % 4 == 0) {
+        return true // se divisao exta é bissexto
+    } else {
+        return false
+    }
+}
+
+console.log(classificacaoAno(2015));// nao bissexto false
+console.log(classificacaoAno(2016));//bissexto true
+*/
+
+/* 14) Crie uma estrutura condicional switch que receba uma string com o nome de uma fruta e que possua três
+casos: Caso maçã, retorne no console: “Não vendemos esta fruta aqui”. Caso kiwi, retorne: “Estamos com
+escassez de kiwis”. Caso melancia, retorne: “Aqui está, são 3 reais o quilo”. Teste com estas três opções .Crie
+também um default, que retornará uma mensagem de erro no console.
+
+fruta = "melancia";
+
+switch(fruta){
+    case "maçã":
+        return console.log("Não vendemos esta fruta aqui");
+        break;
+    case "kiwi": 
+        return console.log("Estamos com escassez de kiwis esta fruta aqui");
+        break;
+    case "melancia":
+        return console.log("Aqui está, são 3 reais o quilo")
+        break
+    default :
+        return console.log("opção invalida tente novamente ")
+}
+*/
