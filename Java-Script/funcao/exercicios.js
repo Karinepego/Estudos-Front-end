@@ -534,9 +534,102 @@ PlanoSaude(61)*/
 
 /* 29) Utilizando a estrutura de repetição for, faça uma função que percorra um vetor e conte quantos números
 deste vetor estão no intervalo [10,20] (repare que o intervalo é fechado, ou seja, inclui o 10 e o 20) e quantos
-deles estão fora do intervalo, escrevendo estas informações. */
+deles estão fora do intervalo, escrevendo estas informações. 
+
+function quantidadePares(vetor){
+    let dentre = 0;
+    let outros = 0;
+        for(let i = 0; i < vetor.length; i++ ){
+            if (vetor[i] >= 10 & (vetor[i] <= 20)){
+                dentre ++; 
+            }else{
+                outros ++;
+            }
+        }
+        console.log(`Existem ${dentre} números dentre 10 e 20 e ${outros} números fora desse intervalro.`)
+    }
+    
+    vetor = [10,15,16,17,18,19,20,25,26];
+    quantidadePares(vetor)*/
+
+/*Escreva um algoritmo que percorre um vetor de inteiros e defina o maior e menor valor dentro do vetor. 
+
+function quantidadePares(vetor){
+let cont = 0;  
+let maior = 0;
+let menor = 1;
+        for(let i = 0; i < vetor.length; i++ ){
+            cont = i
+            if (vetor[i] > cont){
+                maior = vetor[i]; 
+            }else{
+                menor = vetor[i];
+            }
+        }
+        console.log(`maior: ${maior} \nmenor: ${menor}`)
+    }
+    
+    vetor = [1,2,3,4,5,6,7,8,9,10];
+    quantidadePares(vetor)
+*/
+
+/*31) Escrever um algoritmo que percorre um vetor de inteiros, conta quantos números negativos há nesse vetor
+e imprime a quantidade no console.
+ 
+function ContaNegativos(vetor){
+let negativos = 0;  
+
+    for(let i = 0; i < vetor.length; i++ ){
+    cont = i
+        if (vetor[i] < 0){
+            negativos ++;
+        }
+    }
+    console.log(`exiatem no veto: ${negativos} numeros negativos`)
+}
+        
+vetor = [-1,-2,-3,-4,-5,-6,-7,0,1,2,3,4,5];
+ContaNegativos(vetor)*/
+
+/*32) Construir um algoritmo que calcule a média aritmética dos valores de um vetor de inteiros 
+
+function mediaVetor (vetor) {
+    let soma = 0
+    for(let i=0; i<vetor.length; i++) {
+        soma += vetor[i]
+    }
+    return soma/vetor.length
+}
+
+vetor = [1, 2, 3, 4, 5]
+console.log(mediaVetor(vetor))
+*/
+
+/* */
 
 
+/*33) Crie três vetores, chamados vetorInteiro, vetorString e vetorDouble. Cada um destes vetores deverá conter
+quatro valores, sendo o primeiro com valores inteiros, o segundo com strings e o terceiro com valores decimais.
+Declarados os vetores, utilize a função de união concat() de duas maneiras diferentes para unir os vetores, e
+mostre o resultado no console. Todos os elementos do vetor resultado deverão aparecer no console.
+ *
 
+function união1 (vetor) {
+    let soma = 0
+    for(let i=0; i<vetor.length; i++) {
+        soma += vetor[i]
+    }
+    return soma/vetor.length
+}
 
+vetorInteiro = [1, 2, 3, 4]
+console.log(vetorInteiro(vetor))
 
+vetorString = ["a", "b", "c", "d"]
+console.log(mediaVetor(vetor))
+
+vetorDouble = [1.5, 2.5, 3.5, 4.5]
+console.log(mediaVetor(vetor))
+
+vetorResultado = vetorInteiro.concat(vetorString, vetorDouble)
+console.log(mediaVetor(vetor))
