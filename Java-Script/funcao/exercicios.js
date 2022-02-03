@@ -605,31 +605,427 @@ vetor = [1, 2, 3, 4, 5]
 console.log(mediaVetor(vetor))
 */
 
-/* */
-
-
 /*33) Crie três vetores, chamados vetorInteiro, vetorString e vetorDouble. Cada um destes vetores deverá conter
 quatro valores, sendo o primeiro com valores inteiros, o segundo com strings e o terceiro com valores decimais.
 Declarados os vetores, utilize a função de união concat() de duas maneiras diferentes para unir os vetores, e
 mostre o resultado no console. Todos os elementos do vetor resultado deverão aparecer no console.
- *
+ 
 
-function união1 (vetor) {
-    let soma = 0
+let vetorInteiro = [1, 2, 3, 4]
+let vetorString = ['Arthur', 'Christian', 'Yuri', 'Galdino']
+let vetorDouble = [1.1, 2.2, 3.3, 4.4]
+
+function concatenar (...args) {
+    let resultado = []
+    for(let i = 0; i<arguments.length; i++){
+        resultado = resultado.concat(arguments[i])  
+    }  
+    return console.log('<< '+ resultado + ' >>');  
+}  
+
+ concatenar(vetorInteiro, vetorDouble, vetorString)// meu jeito
+
+/*console.log(concatenar(vetorInteiro, vetorDouble))  
+console.log(concatenar(vetorDouble, vetorString))  */
+
+/* 35) Crie dois vetores chamados vetorPilha e vetorAdiciona. Inicialmente, o vetorPilha conterá cinco elementos
+inteiros: [1, 2, 3, 4, 5]. Você deverá adicionar os valores contidos no vetorAdiciona [6, 7, 8, 9, 10] ao vetor pilha
+e mostrá-los no console. É importante lembrar que o método Push retorna somente o tamanho do Vetor. Ao
+final das operações imprima os vetores no console.
+
+vetorPilha [1, 2, 3, 4, 5];
+vetorAdiciona  [6, 7, 8, 9, 10];*/
+
+/* 40) Faça uma função que receba como parâmetro um vetor de notas e mostre os conceitos de cada uma de
+modo que de 0,0 a 4,9 seja atribuído o conceito D, 
+de 5,0 a 6,9 seja atribuído o conceito C, 
+de 7,0 a 8,9 o conceito B e 
+de 9,0 a 10,0 o conceito A.
+
+function conceitoNotas (vetor) {
+let listaConsceitos = [];
     for(let i=0; i<vetor.length; i++) {
-        soma += vetor[i]
+        if((vetor[i] >= 0) && (vetor[i] <= 4.9)){
+            listaConsceitos.push('D');
+        }else if((vetor[i] >= 5) && (vetor[i] <= 6.9)){
+            listaConsceitos.push('C');
+        }else if((vetor[i] >= 7) && (vetor[i] <= 8.9)){
+            listaConsceitos.push('B');
+        }else if((vetor[i] >= 9) && (vetor[i] <= 10)){
+            listaConsceitos.push('A');
+        }else{
+            listaConsceitos.push('Invalida');
+        }
     }
-    return soma/vetor.length
+    return listaConsceitos;
+}  
+
+let notas = [10, 13, 9, 8.2, 2.5, 7.7, 6.8]
+let vetorConceitos = conceitoNotas(notas);
+console.log(vetorConceitos)*/ 
+
+/* 23) Escreva um algoritmo que leia o código de um aluno e suas três notas. Calcule a média ponderada do
+aluno, considerando que o peso para a maior nota seja 4 e para as duas restantes, 3. Mostre o código do
+aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e
+"REPROVADO" se a média for menor que 5. Repita a operação até que o código lido seja negativo.
+
+    
+function calcularNotaFinal(codAluno, nota1, nota2, nota3){
+    let notas = []
+    notas.push(nota1)// push tende a trazzer pra dentro do array as notas por ordem de escrita no codigo
+    notas.push(nota2)
+    notas.push(nota3)
+    notas.sort((a,b) => a < b ? 1 : -1)//arrow functions; mettodo sort e ...
+    //dentro do obj sort foi criado a variavel a e b, que tem uma função responsavel em colocar o menor sempre primeiro q o maior
+    /*mesmo que sort(ordenanumero)
+    function ordenanumero(a,b){
+        se true 1 se false -1
+    }
+    let mediaFinal = (notas[0] * 4 + notas[1] * 3 + notas[2] * 3)/10
+    console.log(`Código do Aluno: ${codAluno}. Notas: ${nota1}, ${nota2}, ${nota3}. ${mediaFinal < 5 ? 'Reprovado.' : 'Aprovado.'}`)
 }
 
-vetorInteiro = [1, 2, 3, 4]
-console.log(vetorInteiro(vetor))
+calcularNotaFinal(123, 2.8, 6, 3.5)
 
-vetorString = ["a", "b", "c", "d"]
-console.log(mediaVetor(vetor))
+/*arrow functions: são sempre funcôes anonimas, se ela é anonima ela precisa se tribuida a uma variavel, e enxerga o this de forma completamente diferente 
 
-vetorDouble = [1.5, 2.5, 3.5, 4.5]
-console.log(mediaVetor(vetor))
+*/
 
-vetorResultado = vetorInteiro.concat(vetorString, vetorDouble)
-console.log(mediaVetor(vetor))
+/* 22) Criar uma função para calcular o valor a ser pago de anuidade de uma associação. A função recebe como
+parâmetro um inteiro que representa o mês (1 - janeiro, 2 - fevereiro…) que foi paga e o valor da anuidade. A
+anuidade deve ser paga no mês de janeiro. Por mês, é cobrado 5% de juros (sob o regime de juros
+compostos). O retorno deve ser o valor a ser pago para o respectivo mês escolhido 
+
+function calcularValor(mes, valor){
+    if(mes > 0 && mes < 13) {
+        atraso = mes - 1
+        return (valor * ((1 + (5/100))**atraso)).toFixed(2) 
+        // tofixed = 2 numeros apos a virgula
+        // Operador de exponenciação (**)
+    } else {
+        return 'Mês inválido.'
+    }
+}
+
+console.log(calcularValor(4, 100))
+*/
+/*27) Construa uma função que receba como parâmetros as alturas e as taxas de crescimento anuais de duas
+crianças e calcule se existe uma criança menor, caso exista se a criança menor ultrapassará a maior e em
+quantos anos isso acontecerá. Utilize centímetros para as unidades de medida.
+ 
+function calcularCrescimento(altura1, taxa1, altura2, taxa2) {
+    if(altura1 == altura2){
+        if (taxa1 > taxa2) {
+            return 'A criança 1 ultrapassará a criança 2 em 1 ano.'
+        } else if(taxa1 < taxa2) {
+            return 'A criança 2 ultrapassará a criança 1 em 1 ano.'
+        }else{
+            return 'As crianças tem igual altura e crescimento.'
+        }
+    } else {
+        if (altura1 > altura2) {
+            if(taxa1 >= taxa2){
+                return 'A criança menor não ultrapassará a maior.'
+            }else{
+               return `A criança menor ultrapassará a maior em ${calcularTempo(altura1, taxa1, altura2, taxa2)} anos` 
+            }
+        } else {
+            if(taxa2 >= taxa1){
+                return 'A criança menor não ultrapassará a maior.'
+            }else{
+               return `A criança menor ultrapassará a maior em ${calcularTempo(altura1, taxa1, altura2, taxa2)} anos` 
+            }
+        }
+    }
+}
+
+function calcularTempo(alturaMenor, taxaAlturaMenor, alturaMaior, taxaAlturaMaior){
+    let qtdAnos = 0
+    while (alturaMenor < alturaMaior) {
+        alturaMenor += taxaAlturaMenor
+        alturaMaior += taxaAlturaMaior
+        qtdAnos++ // qtdAnos = qtdAnos + 1
+    }
+    //console.log(qtdAnos)
+    return qtdAnos
+}
+
+console.log(calcularCrescimento(150, 2, 130, 4));
+*/
+
+/*20) Crie um programa para informar quais e quantas notas são necessárias para entregar o mínimo de cédulas
+para um determinado valor informado pelo usuário considerando notas de R$ 100, R$ 50, R$ 10 e R$ 5 e R$ 1.
+Seu programa deve mostrar apenas as notas utilizadas. Por exemplo, ao solicitar R$18, o programa deve
+informar apenas a seguinte informação (note que não foram exibidas informações sobre as demais cédulas): 1
+nota(s) de R$ 10. 1 nota(s) de R$ 5. 3 nota(s) de R$ 1. 
+
+function sacarDinheiro(valorSaque) {
+    let contador100 = 0
+    let contador50 = 0
+    let contador10 = 0
+    let contador5 = 0
+    let contador1 = 0
+    let valorNota = calcularValorNota(valorSaque)
+    while (valorSaque >= valorNota) {
+        switch (valorNota) {
+            case 100:
+                valorSaque -= 100 //valorSaque = valorSaque - 100
+                contador100++ //equvale a uma nota de 100
+                break
+            case 50:
+                valorSaque -= 50
+                contador50++
+                break
+            case 10:
+                valorSaque -= 10
+                contador10++
+                break
+            case 5:
+                valorSaque -= 5
+                contador5++  // contador5 = contador5 + 1 -----pra que ele serve?
+                break
+            case 1:
+                contador1++
+                valorSaque -= 1 // pq ta invertida a ordem?
+                break
+        }
+
+        valorNota = calcularValorNota(valorSaque)
+
+    }
+    return elaborarResultado(contador100, contador50, contador10, contador5, contador1)
+}
+
+function calcularValorNota(valorSaque) {
+    if (valorSaque >= 100) {
+        return 100
+    } else if (valorSaque >= 50) {
+        return 50
+    } else if (valorSaque >= 10) {
+        return 10
+    } else if (valorSaque >= 5) {
+        return 5
+    } else if (valorSaque >= 1) {
+        return 1
+    }
+}
+
+function elaborarResultado(contador100, contador50, contador10, contador5, contador1) {
+    let resultado = ''
+
+    if (contador100 > 0) {
+        resultado += `${contador100} nota(s) de R$ 100. `// resutado = resultado + string parafraseada com o resultado correto
+    }
+
+    if (contador50 > 0) {
+        resultado += `${contador50} nota(s) de R$ 50. `
+    }
+
+    if (contador10 > 0) {
+        resultado += `${contador10} nota(s) de R$ 10. `
+    }
+
+    if (contador5 > 0) {
+        resultado += `${contador5} nota(s) de R$ 5. `
+    }
+
+    if (contador1 > 0) {
+        resultado += `${contador1} nota(s) de R$ 1. `
+    }
+
+    return resultado // no final vai ter todas as frases juntas e concatenadas
+}
+
+console.log(sacarDinheiro(153));*/
+
+ 
+/*35) Crie dois vetores chamados vetorPilha e vetorAdiciona. Inicialmente, o vetorPilha conterá cinco elementos
+inteiros: [1, 2, 3, 4, 5]. Você deverá adicionar os valores contidos no vetorAdiciona [6, 7, 8, 9, 10] ao vetor pilha
+e mostrá-los no console. É importante lembrar que o método Push retorna somente o tamanho do Vetor. Ao
+final das operações imprima os vetores no console.
+ 
+
+let vetorPilha = [1, 2, 3, 4, 5]
+let vetorAdiciona = [6, 7, 8, 9, 10]
+
+function adicionaVetor(vetorInicial, vetorAdicionar) {
+    for(let i = 0; i < vetorAdicionar.length; i++) {
+        console.log(vetorAdicionar[i])
+        vetorInicial.push(vetorAdicionar[i])// pega o addicionar e coloca em inicial
+        //sig: coloca no iniciaql o 6, depois o 7 depois 8 ate o final do for
+    }
+    console.log('Ve o: ' + vetorAdicionar) // que foi usado mas nao alterado
+    console.log('Vetor resultado: ' + vetorInicial) // que foi usado de base e alterado
+}
+
+adicionaVetor(vetorPilha, vetorAdiciona)
+*/
+
+/* 36) Crie duas funções que recebem dois parâmetros, um vetor com apenas valores numéricos e um número
+inteiro. Faça com que a primeira função retorne outro vetor que será resultado da multiplicação de cada
+elemento pelo número passado como parâmetro. A segunda função fará o mesmo da primeira se e somente se
+o valor do elemento for maior que 5.
+
+let vetor = [1, 2, 3, 4, 5]
+
+function multiplicaVetor(vetor, multiplicador){
+    let vetorResultado = []
+    vetor.forEach(elemento => { //O método forEach() executa uma função callback para cada elemento do array. e tbm ArrowFuction
+        //elemento é o valor de ""parametro"" entre aspas da funçao (q vc sabe arrowfunction é anonima)
+        vetorResultado.push(elemento * multiplicador) 
+    });
+    return vetorResultado
+}
+
+console.log(multiplicaVetor(vetor, 3))*/
+
+/*37) Escreva duas funções, uma para progressão aritmética e uma para progressão geométrica que recebam
+como parâmetros um número n (número de termo), a1 (o primeiro termo) e r (a razão) e escreva os n termos ,
+bem como a soma dos elementos 
+
+function pA (n, a1, r) {
+    for (let i = 0; i < n; i++) {
+        console.log(a1 + r*i)
+    }
+    console.log('Soma: ' + (n * (a1 + (a1 + ((n-1)*r))))/2)    
+}
+
+function pG (n, a1, r) {
+    //console.log(a1)
+    for(let i = 0; i < n; i++){
+        console.log(a1*(r**i))
+    }
+    console.log('Soma: ' + (a1 * ((r**n)-1))/(r-1))
+}
+
+pA(10, 10, 15)
+console.log('----------------');
+pG(10, 5, 3)
+*/
+
+/* 34) Construa uma função que receberá duas Strings de tamanhos variados e que retornará True ou False caso
+todos os caracteres (independentemente de ser maiúsculo ou minúsculo) estejam contidos em ambas palavras. 
+
+function verificacaoDeString (string1, string2) { //recebe as duas strings
+    let estaContido = true; //variável para verificar se os caracteres estao contidos nas duas strings
+    for (let i = 0; i < string1.length; i++) { //loop que vai percorrer a primeira string (string1)
+        let caractereString1 = string1.charAt(i).toLowerCase() //vai converter os caracteres da string1 para minusculo
+        for(let j = 0; j < string2.length; j++){ //dentro do loop da string1, vai percorrer a string2
+            let caractereString2 = string2.charAt(j).toLowerCase() //tal qual string1, vai converter os caracteres da string2 para minusculo
+ 
+            if(caractereString1 == caractereString2) { //comparação dos caracteres da string1 e string2
+                estaContido = true //se, e somente se, as strings tiverem os mesmos caracteres, o estaContido continuará true
+                break //sai do loop!
+            } else { //caso contrário, se os caracteres não estiverem nas duas strings...
+                estaContido = false //estaContido é convertido para false!
+            }
+        }
+        if(!estaContido) { //caso estaContido seja falso...
+            //console.log(estaContido) //imprime o valor de estaContido
+            return estaContido //retorna o valor para a chamada da função
+        }
+    }
+    console.log(estaContido) //imprime o valor true ou false
+    return estaContido //retorna o valor de estaContido para a chamada da função
+ }
+ 
+ console.log(verificacaoDeString('aGc','aVc'))
+
+ /*
+ eu não entendi o porque que else da linha 11 nao tem break... tendo em vista que me parece que:
+
+a variável estacontido poderia ser sobreposta... exemplo
+
+string1 ='aGc'      string2 = 'aVc'
+
+(Na minha cabeça a 1° rodada do loop vai cair em estacontido = true e break da linha 10;
+
+Na 2° rodada ele vai cair em true, na 3° rodada do loop vai cair emestacontido = false da linha 12;  pq D não contem na string2
+
+Na 4° rodada ele vai cair em true linha 9 o que sobrepõe a variavel estacontido =  false em true ... sendo que o certo é false e não true
+
+eu estou errando em algum lugar com o meu raciocinio, pq o programa funciona, eu so não sei onde.
+
+
+ah eu descobri meu erro break nao volta ao for da linha 5, mas sim ele desce pra linha 15, 
+
+a cada indice das sitings q sao lidas o e compradas com todos caracteres da string2 o if(!estacontido)
+ é lido que retorna o valor false de uma só vez, o q faz o programa ser intolerante á variavel 
+ estacontido = false logo na primeira vez q ele aparece.
+ */
+
+/*38) Escreva uma função que receba dois parâmetros início e fim. Essa função deve imprimir todos os números
+ímpares que estão entre esses valores. Por padrão os valores devem ser 0 para início e 100 para fim. Atente
+para corrigir a ordem dos parâmetros caso a função receba o valor maior antes do menor. 
+
+function imprimirImpares(inicio = 0, fim = 100) {
+    if (inicio > fim) {
+        inicio = fim + inicio
+        fim = inicio - fim
+        inicio = inicio - fim // fim = 19 e inicio 3 
+    }
+
+    for (let i = inicio; i <= fim; i++) {        
+        if (i % 2 == 1) {
+            console.log(i)
+        }
+    }
+}
+
+imprimirImpares(19, 3)
+*/
+
+/*39) Crie uma função que receba dois vetores de igual tamanho e troque seus elementos de modo que o
+primeiro elemento do vetorA passe a ser o primeiro elemento do vetorB e vice versa e assim sucessivamente.
+Faça a troca sem utilizar uma variável auxiliar.
+
+function trocaValores(vetorA, vetorB) {
+    if (vetorA.length == vetorB.length) {
+        for(let i = 0; i < vetorA.length; i++){
+            vetorA[i] = vetorA[i] + vetorB[i]
+            vetorB[i] = vetorA[i] - vetorB[i]
+            vetorA[i] = vetorA[i] - vetorB[i]
+        }
+    } else {
+        return 'Vetores de tamanhos diferentes.'
+    }
+
+    console.log('Novo vetor A: ' + vetorA)
+    console.log('Novo vetor B: ' + vetorB)
+}
+
+let vetorA = [1, 2, 3]
+let vetorB = [4, 5, 6]
+
+trocaValores(vetorA, vetorB)*/
+
+/*08) Pedro joga N jogos de basquete por temporada. Para saber como está ele está progredindo, ele mantém
+registro de todos os as pontuações feitas por jogo. Após cada jogo ele anota no novo valor e confere se o
+mesmo é maior ou menor que seu melhor e pior desempenho. Dada uma lista string = “pontuação1 pontuação2
+pontuação3 etc..”, escreva uma função que ao recebê-la irá comparar os valores um a um e irá retornar um
+vetor com o número de vezes que ele bateu seu recorde de maior número de pontos e quando fez seu pior
+jogo. (Número do pior jogo). 
+
+let stringPontuacoes = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0"
+ 
+function avaliaPontuacoes (stringPontuacoes) {
+    let pontuacoes = stringPontuacoes.split(", ")
+    //separa a string e coloca num array, cujo criterio de separação seria a (virgola seguido de espaço)
+    let qtdQuebraDeRecords = 0
+    let piorJogo = 1
+    let maiorPontuacao = pontuacoes[0]
+    let menorPontuacao = pontuacoes[0]
+
+    for (let i = 1; i < pontuacoes.length; i++) {
+        if(pontuacoes[i] > maiorPontuacao) {
+            maiorPontuacao = pontuacoes[i]
+            qtdQuebraDeRecords++
+        }else if (pontuacoes[i] < menorPontuacao) {
+            menorPontuacao = pontuacoes[i]
+            piorJogo = i+1;
+        }
+    }
+    return [qtdQuebraDeRecords, piorJogo]
+}
+ 
+console.log(avaliaPontuacoes(stringPontuacoes)) */
